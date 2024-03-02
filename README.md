@@ -18,7 +18,7 @@ This project is an e-commerce API built using Django, a high-level Python web fr
 4. Start the development server with `python manage.py runserver`.
 
 ## Usage
-1. Access the API endpoints to interact with the features.
+1. Access the API endpoints to interact with the features (/api/schema/swagger-ui/).
 2. Customize and extend the functionality as needed for your e-commerce platform.
 
 ## Contributing
