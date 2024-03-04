@@ -28,5 +28,6 @@ urlpatterns = [
         ),
         name="swagger-ui",
     ),
-    path('users/', include('users.urls'))
+    path('users/', include('users.urls')),
+    path('products/', include('products.urls')),
 ]
