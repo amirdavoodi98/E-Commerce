@@ -1,0 +1,61 @@
+[
+    {
+      "model": "products.productcategory",
+      "pk": 1,
+      "fields": {
+        "name": "category1"
+      }
+    },
+    {
+      "model": "products.productcategory",
+      "pk": 2,
+      "fields": {
+        "name": "category2"
+      }
+    },
+    {
+      "model": "products.product",
+      "pk": 1,
+      "fields": {
+        "category": 1,
+        "name": "product1",
+        "description": "this is a test product for category1",
+        "price": 122.0,
+        "image": ""
+      }
+    },
+    {
+        "model": "products.product",
+        "pk": 2,
+        "fields": {
+            "category": 1,
+            "name": "product2",
+            "description": "this is a test product for category1",
+            "price": 133.0,
+            "image": ""
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 3,
+        "fields": {
+          "category": 2,
+          "name": "product3",
+          "description": "this is a test product for category2",
+          "price": 222.0,
+          "image": ""
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 4,
+        "fields": {
+          "category": 2,
+          "name": "product4",
+          "description": "this is a test product for category2",
+          "price": 233.0,
+          "image": ""
+        }
+    }
+]
+    
