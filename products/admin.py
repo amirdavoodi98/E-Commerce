@@ -3,6 +3,7 @@ from django.contrib import admin
 from products.models.category import ProductCategory
 from products.models.product import Product
 
+
 @admin.register(ProductCategory)
 class UserAdminProductCategory(admin.ModelAdmin):
     list_display = ('name',)
@@ -10,4 +11,4 @@ class UserAdminProductCategory(admin.ModelAdmin):
 
 @admin.register(Product)
 class UserAdminProduct(admin.ModelAdmin):
-    list_display = ('category', 'name', 'price')
+    list_display = ('category', 'name', 'price', 'stock')
