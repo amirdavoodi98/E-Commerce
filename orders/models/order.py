@@ -14,3 +14,7 @@ class Order(models.Model):
     @property
     def total_price(self):
         return self.amount * self.product.price
+    
+    @property
+    def status(self):
+        return self.cart.status
