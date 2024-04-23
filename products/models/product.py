@@ -10,6 +10,7 @@ class Product(models.Model):
     description = models.TextField()
     price = models.FloatField(validators=[MinValueValidator(0)])
     image = models.ImageField(upload_to='products/', null=True, blank=True)
+    stock = models.PositiveIntegerField(default=0)
 
     class Meta:
         ordering = ['name']
@@ -20,3 +21,17 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+    
+    def increase_stock(self, amount: int):
+        if amount <= 1:
+            raise ValueError("Amount must be a positive integer and greater than 0")
+        
+        self.stock = self.stock + amount
+        self.save()
+
+    def decrease_stock(self, amount: int):
+        if amount <= 1:
+            raise ValueError("Amount must be a positive integer and greater than 0")
+        
+        self.stock = self.stock - amount
+        self.save()
